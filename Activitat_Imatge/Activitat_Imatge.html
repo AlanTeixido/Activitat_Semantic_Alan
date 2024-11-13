@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserció d'Imatges en HTML5</title>
+    
+    <!-- Estils bàsics per a les imatges -->
+    <style>
+        /* Estil per a totes les imatges */
+        img {
+            max-width: 500px;
+            height: auto;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Secció amb imatge de fons */
+        .background-image-section {
+            background-image: url('./src/junglas\ \(1\).jpg'); /* imatge local de fons */
+            background-size: cover;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            height: 200px;
+        }
+
+        #black {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemple d'Inserció d'Imatges en HTML5</h1>
+
+    <!-- Imatge des d'una URL externa -->
+    <h2>Imatge Externa</h2>
+    <img src="https://images.unsplash.com/photo-1505221594957-3931cba3a090?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8fA%3D%3D" alt="Imatge des d'una URL externa" title="Aquesta és una imatge des d'una URL externa">
+
+    <!-- Imatge emmagatzemada localment -->
+    <h2>Imatge Local</h2>
+    <img src="./src/mono.jpg" alt="Imatge emmagatzemada localment" title="Aquesta és una imatge local que es troba en la mateixa carpeta que l'arxiu HTML">
+
+    <!-- Secció amb imatge de fons -->
+    <h2>Secció amb Imatge de Fons</h2>
+    <div class="background-image-section">
+        <p id="black">Aquesta secció té una imatge de fons emmagatzemada localment.</p>
+    <br>
+
+    </div>
+
+</body>
+</html>
